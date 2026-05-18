@@ -112,28 +112,8 @@ button:hover {
 .profile-menu button {
     width: 100%;
     margin-top: 10px;
-}
-
-.google-btn,
-.google-login {
-    background: white;
-    color: #111827;
-    border: 1px solid #d1d5db;
-}
-
-.google-btn:hover,
-.google-login:hover {
-    background: #f3f4f6;
-}
-
-.apple-btn,
-.apple-login {
-    background: black;
-    color: white;
-}
-
-.signup-btn {
-    background: #0a66c2;
+    padding: 12px 18px;
+    font-size: 16px;
 }
 
 /* HERO */
@@ -290,6 +270,120 @@ select {
     font-size: 16px;
 }
 
+/* LOGIN PAGE */
+.login-page {
+    min-height: 100vh;
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.login-card {
+    width: 430px;
+    max-width: 100%;
+    background: white;
+    padding: 38px;
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1 {
+    color: #0a66c2;
+    font-size: 30px;
+    margin: 0 0 28px;
+}
+
+.login-card h2 {
+    font-size: 38px;
+    margin: 0 0 12px;
+}
+
+.login-card p {
+    color: #555;
+    font-size: 17px;
+}
+
+.login-card input {
+    width: 100%;
+    margin-top: 16px;
+    padding: 17px;
+    border-radius: 12px;
+    border: 1px solid #9ca3af;
+    font-size: 17px;
+}
+
+.login-card a {
+    display: block;
+    color: #0a66c2;
+    font-weight: bold;
+    margin: 18px 0;
+    text-decoration: none;
+}
+
+.login-main-btn,
+.login-card .google-btn,
+.login-card .apple-btn,
+.login-card .back-btn {
+    width: 100%;
+    display: block;
+    padding: 17px;
+    margin: 16px auto 0;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-main-btn {
+    background: #0a66c2;
+}
+
+.login-card .google-btn {
+    background: white;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.login-card .google-btn:hover {
+    background: #f3f4f6;
+}
+
+.login-card .apple-btn {
+    background: black;
+    color: white;
+}
+
+.login-card .apple-btn:hover {
+    background: #111827;
+}
+
+.divider {
+    text-align: center;
+    margin: 24px 0;
+    color: #6b7280;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.join-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.join-text p {
+    font-size: 19px;
+    color: #4b5563;
+    margin: 0;
+}
+
+.join-text span {
+    color: #0a66c2;
+    font-weight: bold;
+}
+
 /* TABLET */
 @media (max-width: 1000px) {
     .modern-header {
@@ -388,145 +482,28 @@ select {
     .detail-card h1 {
         font-size: 30px;
     }
-}
 
-.login-page {
-    min-height: 100vh;
-    background: #f3f2ef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+    .login-page {
+        padding: 16px;
+    }
 
-.login-card {
-    width: 400px;
-    background: white;
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-}
+    .login-card {
+        padding: 28px 22px;
+    }
 
-.login-card h1 {
-    color: #0a66c2;
-    font-size: 28px;
-    margin-bottom: 25px;
-}
+    .login-card h1 {
+        font-size: 24px;
+    }
 
-.login-card h2 {
-    font-size: 32px;
-    margin: 0;
-}
+    .login-card h2 {
+        font-size: 32px;
+    }
 
-.login-card p {
-    color: #555;
-}
-
-.login-card input {
-    width: 100%;
-    margin-top: 14px;
-    padding: 15px;
-    border-radius: 6px;
-    border: 1px solid #666;
-    font-size: 16px;
-}
-
-.login-card a {
-    display: block;
-    color: #0a66c2;
-    font-weight: bold;
-    margin: 15px 0;
-    text-decoration: none;
-}
-
-.login-main-btn {
-    width: 100%;
-    background: #0a66c2;
-    padding: 15px;
-    font-size: 16px;
-}
-
-.divider {
-    text-align: center;
-    margin: 18px 0;
-    color: #777;
-}
-
-.join-text {
-    text-align: center;
-}
-
-.join-text span {
-    color: #0a66c2;
-    font-weight: bold;
-}
-
-.back-login {
-    width: 100%;
-    background: #111827;
-    margin-top: 10px;
-}
-
-.login-card {
-    width: 420px;
-    max-width: 95%;
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
-}
-
-.login-card input {
-    width: 100%;
-    margin-top: 18px;
-    padding: 18px;
-    border-radius: 14px;
-    border: 1px solid #9ca3af;
-    font-size: 18px;
-}
-
-.login-main-btn,
-.google-btn,
-.apple-btn {
-    width: 100%;
-    padding: 18px;
-    font-size: 20px;
-    margin-top: 16px;
-    border-radius: 999px;
-    font-weight: bold;
-}
-
-.google-btn {
-    background: white;
-    color: #111827;
-    border: 1px solid #d1d5db;
-}
-
-.apple-btn {
-    background: black;
-    color: white;
-}
-
-.divider {
-    text-align: center;
-    margin: 24px 0;
-    color: #6b7280;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.join-text {
-    text-align: center;
-    margin-top: 28px;
-    font-size: 18px;
-}
-
-.join-text span {
-    color: #0a66c2;
-    font-weight: bold;
-}
-
-.back-btn {
-    width: 100%;
-    margin-top: 20px;
+    .login-main-btn,
+    .login-card .google-btn,
+    .login-card .apple-btn,
+    .login-card .back-btn {
+        font-size: 16px;
+        padding: 15px;
+    }
 }
