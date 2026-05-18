@@ -1,0 +1,157 @@
+.login-page {
+    min-height: 100vh;
+    background: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.login-card {
+    width: 430px;
+    max-width: 100%;
+    background: white;
+    padding: 38px;
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1 {
+    color: #0a66c2;
+    font-size: 30px;
+    margin: 0 0 28px;
+}
+
+.login-card h2 {
+    font-size: 38px;
+    margin: 0 0 12px;
+    color: #111827;
+}
+
+.login-card p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.login-card input {
+    width: 100%;
+    margin-top: 16px;
+    padding: 17px;
+    border-radius: 12px;
+    border: 1px solid #9ca3af;
+    font-size: 17px;
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #0a66c2;
+}
+
+.login-card a {
+    display: block;
+    color: #0a66c2;
+    font-weight: bold;
+    margin: 18px 0;
+    text-decoration: none;
+}
+
+.login-main-btn,
+.google-btn,
+.apple-btn,
+.back-btn {
+    width: 100%;
+    display: block;
+    padding: 17px;
+    margin-top: 16px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-main-btn {
+    background: #0a66c2;
+    color: white;
+}
+
+.login-main-btn:hover {
+    background: #004182;
+}
+
+.google-btn {
+    background: white;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.google-btn:hover {
+    background: #f3f4f6;
+}
+
+.apple-btn {
+    background: black;
+    color: white;
+}
+
+.apple-btn:hover {
+    background: #111827;
+}
+
+.back-btn {
+    background: #111827;
+    color: white;
+}
+
+.divider {
+    text-align: center;
+    margin: 24px 0;
+    color: #6b7280;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.join-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.join-text p {
+    font-size: 18px;
+    color: #4b5563;
+    margin: 0;
+}
+
+.join-text span {
+    color: #0a66c2;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .login-page {
+        padding: 16px;
+    }
+
+    .login-card {
+        padding: 28px 22px;
+    }
+
+    .login-card h1 {
+        font-size: 24px;
+    }
+
+    .login-card h2 {
+        font-size: 32px;
+    }
+
+    .login-main-btn,
+    .google-btn,
+    .apple-btn,
+    .back-btn {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
