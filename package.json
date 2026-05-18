@@ -1,23 +1,22 @@
 {
-    "name": "student-jobs-app",
+    "name": "student-job-search-small-website",
+    "private": true,
     "version": "1.0.0",
     "type": "module",
+    "homepage": "https://Ehtasham-Yasin.github.io/student-job-search-small-website-/",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
-        "@vitejs/plugin-react": "latest",
-        "vite": "latest",
-        "react": "latest",
-        "react-dom": "latest",
-        "framer-motion": "latest",
-        "lucide-react": "latest"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "tailwindcss": "latest",
-        "postcss": "latest",
-        "autoprefixer": "latest"
+        "@vitejs/plugin-react": "^4.0.0",
+        "gh-pages": "^6.1.1",
+        "vite": "^8.0.13"
     }
 }
